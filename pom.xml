@@ -26,7 +26,7 @@
     </developer>
   </developers>
   <scm>
-    <connection>scm:git:git://github.com/gizbel/excel-extractor.git</connection>
+    <connection>scm:git:https://github.com/gizbel/excel-extractor.git</connection>
     <url>https://github.com/gizbel/excel-extractor/releases</url>
     <tag>excel-extractor-1.0.1</tag>
   </scm>
