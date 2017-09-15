@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.gizbel.excel</groupId>
   <artifactId>excel-extractor</artifactId>
-  <version>1.0.1</version>
+  <version>1.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
   <name>excel-extractor</name>
   <description>Easy way to extract excel data into java beans</description>
@@ -27,7 +27,7 @@
   </developers>
   <scm>
     <connection>scm:git:https://github.com/gizbel/excel-extractor.git</connection>
-    <url>https://github.com/gizbel/excel-extractor/releases</url>
+    <url>https://github.com/gizbel/excel-extractor</url>
     <tag>excel-extractor-1.0.1</tag>
   </scm>
   <distributionManagement>
@@ -52,36 +52,6 @@
           <source>1.8</source>
           <target>1.8</target>
         </configuration>
-      </plugin>
-      <plugin>
-		<groupId>org.apache.maven.plugins</groupId>
-		<artifactId>maven-release-plugin</artifactId>
-		<version>2.5</version>
-		<configuration>
-	        <checkModificationExcludes>
-	            <checkModificationExclude>pom.xml</checkModificationExclude>
-	        </checkModificationExcludes>
-	    </configuration>
-		<dependencies>
-			<dependency>
-				<groupId>org.apache.maven.scm</groupId>
-				<artifactId>maven-scm-provider-gitexe</artifactId>
-				<version>1.9.1</version>
-			</dependency>
-		</dependencies>
-	 </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-gpg-plugin</artifactId>
-        <executions>
-          <execution>
-            <id>sign-artifacts</id>
-            <phase>verify</phase>
-            <goals>
-              <goal>sign</goal>
-            </goals>
-          </execution>
-        </executions>
       </plugin>
     </plugins>
   </build>
@@ -110,10 +80,5 @@
 		    <artifactId>poi-ooxml-schemas</artifactId>
 		    <version>3.11</version>
 		</dependency>
-		  <dependency>
-		    <groupId>com.monitorjbl</groupId>
-		    <artifactId>xlsx-streamer</artifactId>
-		    <version>1.0.1</version>
-		  </dependency>
   </dependencies>
 </project>
