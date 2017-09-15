@@ -6,7 +6,7 @@ Read excel file and return result as list of java bean.
 <dependency>
     <groupId>com.gizbel.excel</groupId>
     <artifactId>excel-extractor</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
 </dependency>
 
 ```
