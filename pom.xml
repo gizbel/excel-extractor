@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.gizbel.excel</groupId>
   <artifactId>excel-extractor</artifactId>
-  <version>1.0.1-SNAPSHOT</version>
+  <version>1.0.2-SNAPSHOT</version>
   <packaging>jar</packaging>
   <name>excel-extractor</name>
   <description>Easy way to extract excel data into java beans</description>
@@ -28,7 +28,7 @@
   <scm>
     <connection>scm:git:https://github.com/gizbel/excel-extractor.git</connection>
     <url>https://github.com/gizbel/excel-extractor</url>
-    <tag>excel-extractor-1.0.1</tag>
+    <tag>excel-extractor-1.0.2</tag>
   </scm>
   <distributionManagement>
     <snapshotRepository>
