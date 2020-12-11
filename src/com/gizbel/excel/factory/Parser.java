@@ -1,7 +1,9 @@
 package com.gizbel.excel.factory;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.lang.reflect.Field;
 import java.sql.Date;
 import java.text.ParseException;
@@ -196,7 +198,8 @@ public class Parser {
     public List<Object> parse(File file) throws InvalidFormatException, IOException, InstantiationException,
             IllegalAccessException, IllegalArgumentException, ParseException {
         List<Object> result = new ArrayList<>();
-        Workbook invoiceWorkbook = WorkbookFactory.create(file);
+        InputStream istrm = new FileInputStream(file);
+        Workbook invoiceWorkbook = WorkbookFactory.create(istrm);
 
         // Currently processing for one sheet, we can loop here for multiple
         // sheets
@@ -237,6 +240,7 @@ public class Parser {
                     break;
             }
         }
+        istrm.close();
         return result;
     }
 
